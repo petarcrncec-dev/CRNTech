@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Retitle — Batch PDF renamer with OCR region selection · CRNTech</title>
+  <meta name="description" content="Retitle lets you draw a region on any PDF, extract the text with OCR, and use it to rename your entire batch automatically. Coming soon for Windows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-retitle">
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="CRNTech home">
+        <img src="CRNTech.png" alt="CRNTech" style="height:48px;width:auto;max-width:180px;object-position:center;display:block;">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero hero--product">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <div class="hero__product-badge reveal">
+            <div class="hero__product-icon"><img src="retitle-logo.svg" alt="Retitle" style="width:52px;height:52px;object-fit:cover;border-radius:12px;"></div>
+            <span class="hero__product-name">Retitle by CRNTech</span>
+          </div>
+          <h1 class="hero__headline reveal reveal--delay-1">
+            Rename a thousand<br>PDFs in minutes.
+          </h1>
+          <p class="hero__sub reveal reveal--delay-2">
+            Draw a box on any PDF — a document number, a title, a date.
+            Retitle reads that region with OCR across your entire folder
+            and renames every file automatically. No manual typing. No mistakes.
+          </p>
+          <div class="hero__actions reveal reveal--delay-3">
+            <span class="badge badge--orange" style="font-size:0.85rem; padding:8px 16px;">Coming soon</span>
+          </div>
+          <p style="margin-top:20px; font-size:0.875rem; color:var(--text-muted);" class="reveal reveal--delay-4">
+            Want to know when it launches? Drop us an email.
+            <a href="mailto:petarcrncec@gmail.com" style="color:var(--accent);">petarcrncec@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="hero__visual reveal reveal--delay-2">
+          <img src="retitle-screenshot.jpg" alt="Retitle region selection screen" style="width:100%;border-radius:12px;box-shadow:0 24px 64px rgba(0,0,0,0.12);border:1px solid rgba(0,0,0,0.06);">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Designed for speed<br>and accuracy</h2>
+        <p>Retitle is built around a simple idea: you know where the useful text lives in your PDFs. Just show it once.</p>
+      </div>
+
+      <div class="features__grid">
+
+        <div class="feature-item reveal reveal--delay-1">
+          <span class="feature-item__icon">🔲</span>
+          <h3>OCR region selection</h3>
+          <p>Draw a selection box on the PDF preview. Retitle reads text from exactly that region on every file in the batch.</p>
+        </div>
+
+        <div class="feature-item reveal reveal--delay-2">
+          <span class="feature-item__icon">📦</span>
+          <h3>Batch processing</h3>
+          <p>Point Retitle at a folder of hundreds of PDFs. It processes them all using the same region and naming rule.</p>
+        </div>
+
+        <div class="feature-item reveal reveal--delay-3">
+          <span class="feature-item__icon">👁️</span>
+          <h3>Visual PDF preview</h3>
+          <p>See a live preview of each PDF as you define your region. No surprises — what you see is what gets renamed.</p>
+        </div>
+
+        <div class="feature-item reveal reveal--delay-4">
+          <span class="feature-item__icon">✏️</span>
+          <h3>Edit before applying</h3>
+          <p>Review all extracted names in a table before anything is changed. Edit individual names or bulk-apply a pattern.</p>
+        </div>
+
+        <div class="feature-item reveal reveal--delay-5">
+          <span class="feature-item__icon">🪟</span>
+          <h3>Windows native</h3>
+          <p>Built for Windows 10 and 11. No Java, no Python runtime, no setup headaches — just install and run.</p>
+        </div>
+
+        <div class="feature-item reveal reveal--delay-6">
+          <span class="feature-item__icon">🔒</span>
+          <h3>Fully offline</h3>
+          <p>OCR runs locally. Your documents never leave your machine. Safe for confidential and sensitive files.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how" id="how-it-works">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>How it works</h2>
+        <p>Three steps from a folder of unnamed PDFs to a perfectly organised archive.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal reveal--delay-1">
+          <div class="step__number">1</div>
+          <h3>Select a folder</h3>
+          <p>Open Retitle and point it at your folder of PDFs. It loads a preview of the first document automatically.</p>
+        </div>
+        <div class="step reveal reveal--delay-2">
+          <div class="step__number">2</div>
+          <h3>Draw a region</h3>
+          <p>Click and drag to mark the area that contains the text you want to use as the filename — a number, title, or date.</p>
+        </div>
+        <div class="step reveal reveal--delay-3">
+          <div class="step__number">3</div>
+          <h3>Review &amp; apply</h3>
+          <p>Retitle extracts text from that region across every PDF and shows you the results. Edit if needed, then apply.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMING SOON ===== -->
+  <section class="coming-soon" id="coming-soon">
+    <div class="container">
+      <div class="coming-soon__inner">
+        <span class="coming-soon__badge reveal">Not yet released</span>
+        <h2 class="reveal reveal--delay-1">Retitle is in development</h2>
+        <p class="reveal reveal--delay-2">
+          Retitle is being actively built and is not yet available for purchase or download.
+          If you have a batch PDF renaming workflow and want to be notified when it launches —
+          or if you'd like to share your use case — reach out at
+          <a href="mailto:petarcrncec@gmail.com">petarcrncec@gmail.com</a>.
+        </p>
+        <div style="margin-top: 36px;" class="reveal reveal--delay-3">
+          <a href="mailto:petarcrncec@gmail.com" class="btn btn--primary btn--lg">Get notified at launch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <span class="footer__logo">CRNTech</span>
+      <span class="footer__copy">© 2026 CRNTech. All rights reserved.</span>
+      <span class="footer__contact">
+        <a href="mailto:petarcrncec@gmail.com">petarcrncec@gmail.com</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRNTech — Simple tools. Real results.</title>
+  <meta name="description" content="CRNTech makes simple, focused software for creative professionals and knowledge workers. No subscriptions. No cloud. Just tools that work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="CRNTech home">
+        <img src="CRNTech.png" alt="CRNTech" style="height:48px;width:auto;max-width:180px;object-position:center;display:block;">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero__eyebrow reveal">Indie software studio</span>
+      <h1 class="hero__headline reveal reveal--delay-1">
+        Simple tools.<br>Real results.
+      </h1>
+      <p class="hero__sub reveal reveal--delay-2">
+        Software for creative professionals and knowledge workers.
+        No subscriptions. No cloud. Just tools that get out of your way.
+      </p>
+      <div class="hero__actions reveal reveal--delay-3">
+        <a href="#products" class="btn btn--primary btn--lg">Browse tools</a>
+        <a href="#about" class="btn btn--secondary btn--lg">About CRNTech</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Our tools</h2>
+        <p>Every product is built to solve one problem well. No bloat, no upsells — just focused software you actually enjoy using.</p>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- Autonym Card -->
+        <article class="product-card product-card--autonym reveal reveal--delay-1">
+          <div class="product-card__icon"><img src="autonym-logo.jpg" alt="Autonym"></div>
+          <span class="product-card__tag">Windows · AI-powered</span>
+          <h3>Autonym</h3>
+          <p class="product-card__desc">
+            Stop manually renaming interview recordings, podcasts, and field audio.
+            Autonym transcribes your files locally with on-device AI, generates
+            meaningful filename suggestions, and renames everything in one click.
+          </p>
+          <div class="product-card__meta">
+            <span class="product-card__price">$19</span>
+            <span class="product-card__price-note">$29.99</span>
+            <span class="badge badge--orange">Launch price</span>
+            <span class="badge badge--green">One-time</span>
+          </div>
+          <a href="autonym.html" class="btn btn--primary">Learn more →</a>
+        </article>
+
+        <!-- Retitle Card -->
+        <article class="product-card product-card--retitle reveal reveal--delay-2">
+          <div class="product-card__icon"><img src="retitle-logo.svg" alt="Retitle"></div>
+          <span class="product-card__tag">Windows · OCR</span>
+          <h3>Retitle</h3>
+          <p class="product-card__desc">
+            Rename hundreds of PDFs without opening a single one.
+            Retitle lets you draw a region on any PDF page — a document number,
+            a title, a date — and uses that text to rename the whole batch automatically.
+          </p>
+          <div class="product-card__meta">
+            <span class="badge badge--orange">Coming soon</span>
+          </div>
+          <a href="retitle.html" class="btn btn--secondary">Learn more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="reveal">Built by one person.<br>Useful to many.</h2>
+        <p class="reveal reveal--delay-1">
+          CRNTech builds small, focused tools that solve real workflow problems —
+          the kind that add up to hours wasted every week if you let them.
+        </p>
+        <p class="reveal reveal--delay-2">
+          Every tool is a one-time purchase. No subscriptions. No telemetry.
+          No cloud lock-in. Your files stay on your machine, and the software
+          works exactly as long as you need it to.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <span class="footer__logo">CRNTech</span>
+      <span class="footer__copy">© 2026 CRNTech. All rights reserved.</span>
+      <span class="footer__contact">
+        <a href="mailto:petarcrncec@gmail.com">petarcrncec@gmail.com</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
