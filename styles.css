@@ -454,7 +454,7 @@ body.theme-autonym footer {
   pointer-events: none;
 }
 .product-card--autonym:hover::after { opacity: 1; }
-.product-card.product-card--autonym:hover { background: red; border-color: black; }
+.product-card.product-card--autonym:hover { background: red; border: 3px solid black; }
 .product-card--autonym .product-card__tag {
   color: #ff4b4b;
   background: rgba(255,75,75,0.08);
