@@ -449,7 +449,7 @@ body.theme-autonym footer {
   inset: 0;
   background: rgba(255,75,75,0.04);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.8s;
   pointer-events: none;
 }
 .product-card--autonym:hover::after { opacity: 1; }
@@ -467,7 +467,7 @@ body.theme-autonym footer {
   inset: 0;
   background: rgba(71,85,105,0.04);
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.8s;
   pointer-events: none;
 }
 .product-card--retitle:hover::after { opacity: 1; }
@@ -599,7 +599,7 @@ body.theme-autonym footer {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 40px;
-  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+  transition: box-shadow 0.8s, transform 0.8s, border-color 0.8s;
   position: relative;
   overflow: hidden;
 }
