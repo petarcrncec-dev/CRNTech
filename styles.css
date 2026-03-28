@@ -443,7 +443,7 @@ body.theme-autonym footer {
 
 /* Autonym product card on index */
 .product-card--autonym::before { display: none; }
-.product-card.product-card--autonym { transition: background 2s; }
+.product-card.product-card--autonym { transition: background 2s, border-color 2s; }
 .product-card--autonym::after {
   content: '';
   position: absolute;
@@ -454,7 +454,7 @@ body.theme-autonym footer {
   pointer-events: none;
 }
 .product-card--autonym:hover::after { opacity: 1; }
-.product-card.product-card--autonym:hover { background: red; }
+.product-card.product-card--autonym:hover { background: red; border-color: black; }
 .product-card--autonym .product-card__tag {
   color: #ff4b4b;
   background: rgba(255,75,75,0.08);
