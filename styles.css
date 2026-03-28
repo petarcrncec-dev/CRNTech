@@ -443,7 +443,7 @@ body.theme-autonym footer {
 
 /* Autonym product card on index */
 .product-card--autonym {
-  border-top: 3px solid #ff4b4b;
+  border: 2px solid #ff4b4b;
 }
 .product-card--autonym:hover::before {
   background: #ff4b4b;
@@ -456,7 +456,7 @@ body.theme-autonym footer {
 
 /* Retitle product card on index */
 .product-card--retitle {
-  border-top: 3px solid #475569;
+  border: 2px solid #475569;
 }
 .product-card--retitle:hover::before {
   background: #475569;
