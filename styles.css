@@ -604,7 +604,8 @@ body.theme-autonym footer {
 }
 
 .product-card:hover .product-card__icon {
-  transform: scale(1.12);
+  transform: scale(1.12) translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .product-card:hover::before {
@@ -615,7 +616,7 @@ body.theme-autonym footer {
   width: 64px;
   height: 64px;
   border-radius: 14px;
-  transition: transform 0.35s;
+  transition: transform 0.35s, box-shadow 0.35s;
   background: var(--accent-light);
   display: flex;
   align-items: center;
