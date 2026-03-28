@@ -603,6 +603,10 @@ body.theme-autonym footer {
   transform: translateY(-4px);
 }
 
+.product-card:hover .product-card__icon {
+  transform: scale(1.12);
+}
+
 .product-card:hover::before {
   opacity: 1;
 }
@@ -611,6 +615,7 @@ body.theme-autonym footer {
   width: 64px;
   height: 64px;
   border-radius: 14px;
+  transition: transform 0.35s;
   background: var(--accent-light);
   display: flex;
   align-items: center;
