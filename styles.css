@@ -115,8 +115,13 @@ section {
   max-width: none !important;
   margin: -62px -20px -62px -10px;
   display: block;
+  transition: transform 0.2s, filter 0.2s;
 }
 .nav__logo:hover { color: var(--text); }
+.nav__logo:hover img {
+  transform: scale(1.06);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.18));
+}
 
 .nav__logo-dot {
   display: inline-block;
