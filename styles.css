@@ -443,6 +443,7 @@ body.theme-autonym footer {
 
 /* Autonym product card on index */
 .product-card--autonym::before { display: none; }
+.product-card.product-card--autonym { transition: background 2s; }
 .product-card--autonym::after {
   content: '';
   position: absolute;
@@ -599,7 +600,7 @@ body.theme-autonym footer {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 40px;
-  transition: background 2s;
+  transition: box-shadow 0.25s, transform 0.25s;
   position: relative;
   overflow: hidden;
 }
