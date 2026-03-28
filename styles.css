@@ -445,10 +445,7 @@ body.theme-autonym footer {
 .product-card.product-card--autonym {
   border: 2px solid #ff4b4b;
 }
-.product-card--autonym:hover::before {
-  background: #ff4b4b;
-  opacity: 1;
-}
+.product-card--autonym::before { display: none; }
 .product-card--autonym .product-card__tag {
   color: #ff4b4b;
   background: rgba(255,75,75,0.08);
@@ -458,10 +455,7 @@ body.theme-autonym footer {
 .product-card.product-card--retitle {
   border: 2px solid #475569;
 }
-.product-card--retitle:hover::before {
-  background: #475569;
-  opacity: 1;
-}
+.product-card--retitle::before { display: none; }
 .product-card--retitle .product-card__tag {
   color: #475569;
   background: rgba(71,85,105,0.08);
