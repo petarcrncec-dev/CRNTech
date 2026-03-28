@@ -106,7 +106,7 @@ section {
   display: flex;
   align-items: center;
   gap: 6px;
-  overflow: hidden;
+  overflow: visible;
   height: 36px;
 }
 .nav__logo img {
