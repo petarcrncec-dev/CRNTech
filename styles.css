@@ -616,7 +616,7 @@ body.theme-autonym footer {
   width: 64px;
   height: 64px;
   border-radius: 14px;
-  transition: transform 0.35s, box-shadow 0.35s;
+  transition: transform 0.42s, box-shadow 0.42s;
   background: var(--accent-light);
   display: flex;
   align-items: center;
