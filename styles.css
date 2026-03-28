@@ -599,7 +599,7 @@ body.theme-autonym footer {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   padding: 40px;
-  transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s, background 0.3s;
+  transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
   position: relative;
   overflow: hidden;
 }
