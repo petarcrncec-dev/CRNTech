@@ -47,8 +47,8 @@
             your whole folder in one go. Private by design. No internet required.
           </p>
           <div class="hero__actions reveal reveal--delay-3">
-            <a href="#" class="btn btn--primary btn--lg">Buy now — $19</a>
-            <a href="#" class="btn btn--outline btn--lg">Download free trial</a>
+            <a href="https://crntech.lemonsqueezy.com/checkout/buy/d95d3238-a07f-44f5-9afe-a70ad6f7f823" class="btn btn--primary btn--lg">Buy now — $19.99</a>
+            <a href="#" class="btn btn--outline btn--lg" onclick="fetch('https://api.github.com/repos/petarcrncec-dev/autonym-releases/releases/latest').then(r=>r.json()).then(d=>{var a=d.assets.find(a=>a.name.endsWith('.exe')&&!a.name.endsWith('.blockmap'));if(a)window.location=a.browser_download_url});return false;">Download free trial</a>
           </div>
           <p style="margin-top:14px; font-size:0.8rem; color:var(--text-light);" class="reveal reveal--delay-4">
             10 files free · No account required · Windows 10/11
@@ -165,7 +165,7 @@
       <div class="pricing-card reveal reveal--delay-1">
         <span class="pricing-card__launch">🚀 Launch price</span>
         <div class="pricing-card__price">
-          <span class="pricing-card__amount">$19</span>
+          <span class="pricing-card__amount">$19.99</span>
           <span class="pricing-card__was">$29.99</span>
         </div>
         <p class="pricing-card__note">One-time purchase — yours forever</p>
@@ -179,8 +179,8 @@
         </ul>
 
         <div class="pricing-card__actions">
-          <a href="#" class="btn btn--primary btn--lg">Buy Autonym — $19</a>
-          <a href="#" class="btn btn--secondary">Download free trial (10 files)</a>
+          <a href="https://crntech.lemonsqueezy.com/checkout/buy/d95d3238-a07f-44f5-9afe-a70ad6f7f823" class="btn btn--primary btn--lg">Buy Autonym — $19.99</a>
+          <a href="https://github.com/petarcrncec-dev/autonym-releases/releases/latest" class="btn btn--secondary">Download free trial (10 files)</a>
         </div>
       </div>
     </div>
