@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank you for purchasing Autonym! — CRNTech</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .thankyou {
+      min-height: calc(100vh - var(--nav-h) - 80px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+    }
+    .thankyou__card {
+      max-width: 540px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow-lg);
+    }
+    .thankyou__icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+    .thankyou__card h1 {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+    .thankyou__card p {
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .thankyou__status {
+      font-size: 0.9rem;
+      color: var(--text-light);
+      margin-top: 16px;
+    }
+    .thankyou__manual {
+      margin-top: 12px;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    .thankyou__manual a {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+    .thankyou__help {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+    .thankyou__help a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="CRNTech home">
+        <img src="CRNTech.png" alt="CRNTech" style="height:48px;width:auto;max-width:180px;object-position:center;display:block;">
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="index.html#products">Products</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== THANK YOU ===== -->
+  <section class="thankyou">
+    <div class="thankyou__card">
+      <div class="thankyou__icon">&#10003;</div>
+      <h1>Thank you for your purchase!</h1>
+      <p>Your download should start automatically. If it doesn't, click the button below.</p>
+      <a id="download-btn" href="#" class="btn btn--primary btn--lg">Download Autonym</a>
+      <p class="thankyou__status" id="status">Fetching latest version...</p>
+      <p class="thankyou__manual" id="manual-link" style="display:none;">
+        Or download directly from <a href="https://github.com/petarcrncec-dev/autonym-releases/releases/latest">GitHub Releases</a>
+      </p>
+      <div class="thankyou__help">
+        Need help? Email <a href="mailto:petarcrncec@gmail.com">petarcrncec@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    (function() {
+      var btn = document.getElementById('download-btn');
+      var status = document.getElementById('status');
+      var manual = document.getElementById('manual-link');
+
+      fetch('https://api.github.com/repos/petarcrncec-dev/autonym-releases/releases/latest')
+        .then(function(r) { return r.json(); })
+        .then(function(d) {
+          var asset = d.assets.find(function(a) {
+            return a.name.endsWith('.exe') && !a.name.endsWith('.blockmap');
+          });
+          if (asset) {
+            btn.href = asset.browser_download_url;
+            status.textContent = 'Downloading ' + d.tag_name + '...';
+            manual.style.display = 'block';
+            // auto-start download
+            window.location = asset.browser_download_url;
+          } else {
+            status.textContent = 'Could not find installer. Use the link below.';
+            manual.style.display = 'block';
+          }
+        })
+        .catch(function() {
+          status.textContent = 'Could not fetch download. Use the link below.';
+          manual.style.display = 'block';
+        });
+    })();
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
