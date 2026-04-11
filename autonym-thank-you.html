@@ -10,6 +10,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <style>
+    :root {
+      --bg:           #0b0d18;
+      --bg-card:      #141627;
+      --bg-subtle:    #1a1d30;
+      --text:         #e2e8f0;
+      --text-muted:   #94a3b8;
+      --text-light:   #64748b;
+      --accent:       #ff4b4b;
+      --accent-dark:  #e03e3e;
+      --accent-light: #2a1a1a;
+      --border:       rgba(255,255,255,0.08);
+      --shadow-lg:    0 12px 32px rgba(0,0,0,0.4);
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+    }
+    .nav {
+      background: rgba(11, 13, 24, 0.95);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .btn--primary {
+      background: var(--accent);
+      color: #fff;
+    }
+    .btn--primary:hover {
+      background: var(--accent-dark);
+    }
     .thankyou {
       min-height: calc(100vh - var(--nav-h) - 80px);
       display: flex;
@@ -87,7 +115,7 @@
   <!-- ===== THANK YOU ===== -->
   <section class="thankyou">
     <div class="thankyou__card">
-      <div class="thankyou__icon">&#10003;</div>
+      <div class="thankyou__icon" style="color:#ff4b4b;">&#10003;</div>
       <h1>Thank you for your purchase!</h1>
       <p>Your download should start automatically. If it doesn't, click the button below.</p>
       <a id="download-btn" href="#" class="btn btn--primary btn--lg">Download Autonym</a>
