@@ -117,8 +117,8 @@
     <div class="thankyou__card">
       <div class="thankyou__icon" style="color:#ff4b4b;">&#10003;</div>
       <h1>Thank you for your purchase!</h1>
-      <p>Your download should start automatically. If it doesn't, click the button below.</p>
-      <a id="download-btn" href="#" class="btn btn--primary btn--lg">Download Autonym</a>
+      <p>Click the button below to download your copy of Autonym.</p>
+      <a id="download-btn" href="#" class="btn btn--primary btn--lg" style="background:#ff4b4b;border-color:#ff4b4b;">Download Autonym</a>
       <p class="thankyou__status" id="status">Fetching latest version...</p>
       <p class="thankyou__manual" id="manual-link" style="display:none;">
         Or download directly from <a href="https://github.com/petarcrncec-dev/autonym-releases/releases/latest">GitHub Releases</a>
@@ -143,7 +143,7 @@
           });
           if (asset) {
             btn.href = asset.browser_download_url;
-            status.textContent = 'Version ' + d.tag_name + ' ready';
+            status.textContent = 'Version ' + d.tag_name;
             manual.style.display = 'block';
           } else {
             status.textContent = 'Could not find installer. Use the link below.';
