@@ -143,10 +143,8 @@
           });
           if (asset) {
             btn.href = asset.browser_download_url;
-            status.textContent = 'Downloading ' + d.tag_name + '...';
+            status.textContent = 'Version ' + d.tag_name + ' ready';
             manual.style.display = 'block';
-            // auto-start download
-            window.location = asset.browser_download_url;
           } else {
             status.textContent = 'Could not find installer. Use the link below.';
             manual.style.display = 'block';
